@@ -1,0 +1,43 @@
+= fb_js_connect
+
+*http://developers.facebook.com/docs/reference/javascript/
+
+== Description:
+
+fb_js_connect lets you verify and parse the cookie that Facebook Connect Javascript SDK provides.
+I've only tested this in Rails 3.0.1
+Very, very incomplete. Use at own risk for now, sorry.
+
+== Configuration:
+
+First create config/fb_credentials.yml and provide these two bits if info from your Facebook App.
+
+  app_id: YOUR_FACEBOOK_APP_ID
+	app_secret: YOUR_FACEBOOK_APP_SECRET
+
+In application_controller.rb:
+
+  include FbJsConnect
+
+== How to use:
+
+To see if you're currently connected to Facebook:
+
+  if current_fb_connect.connected
+		return true
+	else
+	  return false
+	end
+	
+To get Facebook UID:
+
+	fb_uid = current_fb_connect.uid
+	
+To get Facebook Access Token:
+
+	fb_access_token = current_fb_connect.access_token
+	
+== To do:
+
+*Call backs for Facebook Connection and Disconnection
+*Add JS Graph API calls
