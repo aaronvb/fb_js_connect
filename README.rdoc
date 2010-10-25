@@ -1,6 +1,6 @@
 = fb_js_connect
 
-*http://developers.facebook.com/docs/reference/javascript/
+* http://developers.facebook.com/docs/reference/javascript
 
 == Description:
 
@@ -39,5 +39,5 @@ To get Facebook Access Token:
 	
 == To do:
 
-*Call backs for Facebook Connection and Disconnection
-*Add JS Graph API calls
+* Call backs for Facebook Connection and Disconnection
+* Add JS Graph API calls
