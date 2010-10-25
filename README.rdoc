@@ -41,3 +41,7 @@ To get Facebook Access Token:
 
 * Call backs for Facebook Connection and Disconnection
 * Add JS Graph API calls
+
+== Help
+
+I'm always open to suggestions and changes, as well as code contributions.
