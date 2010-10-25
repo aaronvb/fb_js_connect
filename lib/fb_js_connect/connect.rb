@@ -5,16 +5,6 @@ module FbJsConnect
     # will verify your cookie, tell you if you're connected, and provide
     # you with a User and other information
 
-    #
-    # cookie = cookies["fbs_YOUR FACEBOOK APP ID"]
-    # fb = FbJsConnect.new(cookie)
-    # fb.connected => true or false
-    # fb.verified? => true or false
-    # fb.user => User or nil (Assuming you have a User class with the 
-    # attribute fb_uid)
-    # fb.uid => uid
-    # fb.access_token => access_token
-
     # Verification works by combining cookie key + values, minus sig, 
     # appending app_secret, then MD5 hashing it.
     # The value of the MD5 should equal the sig value.
