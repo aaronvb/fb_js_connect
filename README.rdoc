@@ -13,7 +13,7 @@ Very, very incomplete. Use at own risk for now, sorry.
 First create config/fb_credentials.yml and provide these two bits if info from your Facebook App.
 
   app_id: YOUR_FACEBOOK_APP_ID
-	app_secret: YOUR_FACEBOOK_APP_SECRET
+  app_secret: YOUR_FACEBOOK_APP_SECRET
 
 In application_controller.rb:
 
@@ -24,18 +24,18 @@ In application_controller.rb:
 To see if you're currently connected to Facebook:
 
   if current_fb_connect.connected
-		return true
-	else
-	  return false
-	end
+    return true
+  else
+    return false
+  end
 	
 To get Facebook UID:
 
-	fb_uid = current_fb_connect.uid
+  fb_uid = current_fb_connect.uid
 	
 To get Facebook Access Token:
 
-	fb_access_token = current_fb_connect.access_token
+  fb_access_token = current_fb_connect.access_token
 	
 == To do:
 
